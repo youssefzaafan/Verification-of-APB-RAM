@@ -94,10 +94,11 @@ flowchart TD
 
 ## Coverage and Reporting
 
-- Functional coverage points track all valid read/write operations and address ranges  
+- Functional coverage points track all valid read/write data and address ranges  
 - Scoreboard reports mismatches with detailed logs  
 - Coverage reports generated in HTML format for easy analysis  
 - Waveforms can be generated for debugging purposes
+  
   Example output:
   ```systemverilog
         # KERNEL: UVM_INFO /home/runner/driver.sv(76) @ 36070: uvm_test_top.e.ag.drv [DRV] mode:readd, addr:12, wdata:42333359, rdata:x, slverr:x
@@ -157,7 +158,7 @@ flowchart TD
 
 **Youssef Zaafan Atya**  
 Email: youssefzafan@gmail.com 
-LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/youssef-zaafan-211482169/)  
+LinkedIn: [Youssef Zaafan](https://www.linkedin.com/in/youssef-zaafan-211482169/)  
 
 ---
 
