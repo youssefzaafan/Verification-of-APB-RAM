@@ -31,10 +31,7 @@ The verification environment is composed of the following components:
  
 
 
-### APB Transaction Waveform
 
-![APB Transaction Waveform](Screenshot (1).png)  
-*Figure 1: APB Read/Write Transaction*
 
 ---
 
@@ -91,7 +88,7 @@ flowchart TD
     I --> J[End Simulation]
 ```
 
-*Figure 2: Simulation Flowchart*
+*Figure 1: Simulation Flowchart*
 
 ---
 
