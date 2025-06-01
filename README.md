@@ -26,17 +26,15 @@ The verification environment is composed of the following components:
 - **Monitor**: Observes DUT signals and collects transaction data  
 - **Sequencer**: Generates sequences of APB transactions (read/write)  
 - **Scoreboard**: Compares DUT outputs with expected results to ensure correctness  
-- **Coverage Model**: Functional coverage points to verify stimulus completeness  
+- **Subscriber**: Functional coverage points to verify stimulus completeness
+- **Env**: Encapsulates Agent, Agent_config, Scoreboard, and Subscriber  
+ 
 
-### Environment Block Diagram
 
-![Environment Architecture](docs/images/env_block_diagram.png)  
-*Figure 1: UVM Environment Block Diagram*
+### APB Transaction Waveform
 
-### APB Transaction Flowchart
-
-![APB Transaction Flowchart](docs/images/apb_transaction_flowchart.png)  
-*Figure 2: APB Read/Write Transaction Flow*
+![APB Transaction Waveform](Screenshot (1).png)  
+*Figure 1: APB Read/Write Transaction*
 
 ---
 
@@ -58,23 +56,20 @@ Additionally, all UVM related classes and components are bundled inside a dedica
 - Support for debug and waveform generation  
 
 ---
+## 🚀 How to Run
 
-## Getting Started
+1. **Compile** the RTL and testbench:
+   ```bash
+   vsim +access+r;
+    run -all;
+    acdb save;
+    acdb report -db fcover.acdb -txt -o coverage_data.txt;
+    exit
+   ```
+   
 
-### Prerequisites
-- UVM library (version 1.2 or higher)  
-- SystemVerilog compliant simulator (e.g., Synopsys VCS, Mentor QuestaSim, Cadence Xcelium)  
-- Bash shell or equivalent for running scripts  
-
-### Setup Instructions
-1. Clone the repository  
-2. Compile the design and testbench files using the provided `compile.sh` script or equivalent command line  
-3. Run simulation with the desired test scenario
-
-```bash
-./compile.sh
-./run_sim.sh +UVM_TESTNAME=test_apb_random_write_read
-```
+2. **Run Simulation**:
+   [EDA Playground Link](https://www.edaplayground.com/x/skRk)
 
 ---
 
@@ -96,7 +91,7 @@ flowchart TD
     I --> J[End Simulation]
 ```
 
-*Figure 3: Simulation Flowchart*
+*Figure 2: Simulation Flowchart*
 
 ---
 
@@ -105,17 +100,51 @@ flowchart TD
 - Functional coverage points track all valid read/write operations and address ranges  
 - Scoreboard reports mismatches with detailed logs  
 - Coverage reports generated in HTML format for easy analysis  
-- Waveforms can be generated for debugging purposes  
+- Waveforms can be generated for debugging purposes
+  Example output:
+  ```systemverilog
+        # KERNEL: UVM_INFO /home/runner/driver.sv(76) @ 36070: uvm_test_top.e.ag.drv [DRV] mode:readd, addr:12, wdata:42333359, rdata:x, slverr:x
+        # KERNEL: UVM_INFO /home/runner/monitor.sv(54) @ 36110: uvm_test_top.e.ag.mon [MON] DATA READ addr:12 data:3505982467 slverr:0
+        # KERNEL: UVM_INFO /home/runner/scoreboard.sv(51) @ 36110: uvm_test_top.e.scb [SCO] DATA MATCHED : addr:12, rdata:3505982467
+        # KERNEL: ----------------------------------------------------------------
+        # KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_objection.svh(1271) @ 36130: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+        # KERNEL: UVM_INFO /home/runner/subscriber.sv(46) @ 36130: uvm_test_top.e.sub [subscriber] Functional Coverage is 100.00%
+        # KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_report_server.svh(869) @ 36130: reporter [UVM/REPORT/SERVER] 
+        # KERNEL: --- UVM Report Summary ---
+        # KERNEL: 
+        # KERNEL: ** Report counts by severity
+        # KERNEL: UVM_INFO : 1819
+        # KERNEL: UVM_WARNING :    0
+        # KERNEL: UVM_ERROR :    0
+        # KERNEL: UVM_FATAL :    0
+        # KERNEL: ** Report counts by id
+        # KERNEL: [DRV]   605
+        # KERNEL: [MON]   605
+        # KERNEL: [RNTST]     1
+        # KERNEL: [SCO]   605
+        # KERNEL: [TEST_DONE]     1
+        # KERNEL: [UVM/RELNOTES]     1
+        # KERNEL: [subscriber]     1
+        # KERNEL: 
+        # RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+        # KERNEL: Time: 36130 ns,  Iteration: 57,  Instance: /tb,  Process: @INITIAL#25_2@.
+        # KERNEL: stopped at time: 36130 ns
+        # VSIM: Simulation has finished. There are no more test vectors to simulate.
+        acdb save;
+        acdb report -db fcover.acdb -txt -o coverage_data.txt;
+        exit
+    ```
+  for coverage report check: coverage_data.txt
 
 ---
 
 ## Tools and Requirements
 
-| Tool           | Version              | Notes                                  |
-|----------------|----------------------|----------------------------------------|
-| Synopsys VCS   | 2023 or later        | Used for compilation and simulation    |
-| UVM Library    | 1.2 or later         | Verification methodology framework      |
-| Bash Shell     | Any POSIX-compliant   | For running scripts                     |
+| Tool             | Version              | Notes                                  |
+|------------------|----------------------|----------------------------------------|
+| Adlec Riviera Pro| 2023 or later        | Used for compilation and simulation    |
+| UVM Library      | 1.2 or later         | Verification methodology framework     |
+| Bash Shell       | Any POSIX-compliant  | For running scripts                    |
 
 ---
 
@@ -129,10 +158,9 @@ flowchart TD
 
 ## Author
 
-**Your Name**  
-Email: your.email@example.com  
-LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)  
+**Youssef Zaafan Atya**  
+Email: youssefzafan@gmail.com 
+LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/youssef-zaafan-211482169/)  
 
 ---
 
-If you have any questions or need further assistance, feel free to contact me.
