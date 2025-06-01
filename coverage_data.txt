@@ -1,0 +1,329 @@
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++       REPORT INFO       ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+SUMMARY
+=====================================================
+|     Property     |             Value              |
+=====================================================
+| User             | runner                         |
+| Host             | 91d17e1fed11                   |
+| Tool             | Riviera-PRO 2023.04            |
+| Report file      | /home/runner/coverage_data.txt |
+| Report date      | 2025-06-01 15:40               |
+| Report arguments |                                |
+| Input file       | /home/runner/fcover.acdb       |
+| Input file date  | 2025-06-01 15:40               |
+| Number of tests  | 1                              |
+=====================================================
+
+
+TEST DETAILS
+==============================================
+| Property |              Value              |
+==============================================
+| Test     | fcover.acdb:fcover              |
+| Status   | Ok                              |
+| Args     | asim +access+r                  |
+| Simtime  | 36130 ns                        |
+| Cputime  | 3.186 s                         |
+| Seed     | 1                               |
+| Date     | 2025-06-01 15:40                |
+| User     | runner                          |
+| Host     | 91d17e1fed11                    |
+| Host os  | Linux64                         |
+| Tool     | Riviera-PRO 2023.04 (simulator) |
+==============================================
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++     DESIGN HIERARCHY    ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CUMULATIVE SUMMARY
+=============================================
+|    Coverage Type    | Weight | Hits/Total |
+=============================================
+| Covergroup Coverage |      1 |   100.000% |
+|---------------------|--------|------------|
+| Types               |        |      1 / 1 |
+=============================================
+CUMULATIVE INSTANCE-BASED COVERAGE: 100.000%
+COVERED INSTANCES: 1 / 1
+FILES: 1
+
+
+CLASS - /\package pkg\/subscriber : work.pkg/\pkg subscriber \
+
+
+    SUMMARY
+    =============================================
+    |    Coverage Type    | Weight | Hits/Total |
+    =============================================
+    | Covergroup Coverage |      1 |   100.000% |
+    |---------------------|--------|------------|
+    | Types               |        |      1 / 1 |
+    =============================================
+    WEIGHTED AVERAGE LOCAL: 100.000%
+
+
+    COVERGROUP COVERAGE
+    =========================================================================
+    |              Covergroup               |   Hits   |  Goal /  | Status  |
+    |                                       |          | At Least |         |
+    =========================================================================
+    | TYPE /\package pkg\/subscriber/cg_cov | 100.000% | 100.000% | Covered |
+    =========================================================================
+    | INSTANCE cov                          | 100.000% | 100.000% | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | COVERPOINT cov::COV1                  | 100.000% | 100.000% | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | bin auto[0:67108863]                  |        1 |        1 | Covered |
+    | bin auto[67108864:134217727]          |        6 |        1 | Covered |
+    | bin auto[134217728:201326591]         |        4 |        1 | Covered |
+    | bin auto[201326592:268435455]         |        3 |        1 | Covered |
+    | bin auto[268435456:335544319]         |        4 |        1 | Covered |
+    | bin auto[335544320:402653183]         |        5 |        1 | Covered |
+    | bin auto[402653184:469762047]         |        2 |        1 | Covered |
+    | bin auto[469762048:536870911]         |        7 |        1 | Covered |
+    | bin auto[536870912:603979775]         |        5 |        1 | Covered |
+    | bin auto[603979776:671088639]         |        5 |        1 | Covered |
+    | bin auto[671088640:738197503]         |        4 |        1 | Covered |
+    | bin auto[738197504:805306367]         |        4 |        1 | Covered |
+    | bin auto[805306368:872415231]         |        4 |        1 | Covered |
+    | bin auto[872415232:939524095]         |        4 |        1 | Covered |
+    | bin auto[939524096:1006632959]        |       10 |        1 | Covered |
+    | bin auto[1006632960:1073741823]       |        5 |        1 | Covered |
+    | bin auto[1073741824:1140850687]       |        1 |        1 | Covered |
+    | bin auto[1140850688:1207959551]       |        4 |        1 | Covered |
+    | bin auto[1207959552:1275068415]       |        8 |        1 | Covered |
+    | bin auto[1275068416:1342177279]       |        3 |        1 | Covered |
+    | bin auto[1342177280:1409286143]       |        4 |        1 | Covered |
+    | bin auto[1409286144:1476395007]       |        9 |        1 | Covered |
+    | bin auto[1476395008:1543503871]       |        8 |        1 | Covered |
+    | bin auto[1543503872:1610612735]       |        6 |        1 | Covered |
+    | bin auto[1610612736:1677721599]       |        6 |        1 | Covered |
+    | bin auto[1677721600:1744830463]       |        6 |        1 | Covered |
+    | bin auto[1744830464:1811939327]       |        6 |        1 | Covered |
+    | bin auto[1811939328:1879048191]       |        5 |        1 | Covered |
+    | bin auto[1879048192:1946157055]       |        4 |        1 | Covered |
+    | bin auto[1946157056:2013265919]       |        5 |        1 | Covered |
+    | bin auto[2013265920:2080374783]       |        4 |        1 | Covered |
+    | bin auto[2080374784:2147483647]       |        2 |        1 | Covered |
+    | bin auto[2147483648:2214592511]       |      304 |        1 | Covered |
+    | bin auto[2214592512:2281701375]       |        4 |        1 | Covered |
+    | bin auto[2281701376:2348810239]       |        4 |        1 | Covered |
+    | bin auto[2348810240:2415919103]       |        6 |        1 | Covered |
+    | bin auto[2415919104:2483027967]       |        5 |        1 | Covered |
+    | bin auto[2483027968:2550136831]       |        6 |        1 | Covered |
+    | bin auto[2550136832:2617245695]       |        5 |        1 | Covered |
+    | bin auto[2617245696:2684354559]       |        5 |        1 | Covered |
+    | bin auto[2684354560:2751463423]       |        3 |        1 | Covered |
+    | bin auto[2751463424:2818572287]       |        6 |        1 | Covered |
+    | bin auto[2818572288:2885681151]       |        6 |        1 | Covered |
+    | bin auto[2885681152:2952790015]       |        6 |        1 | Covered |
+    | bin auto[2952790016:3019898879]       |        5 |        1 | Covered |
+    | bin auto[3019898880:3087007743]       |        5 |        1 | Covered |
+    | bin auto[3087007744:3154116607]       |        6 |        1 | Covered |
+    | bin auto[3154116608:3221225471]       |        4 |        1 | Covered |
+    | bin auto[3221225472:3288334335]       |        6 |        1 | Covered |
+    | bin auto[3288334336:3355443199]       |        5 |        1 | Covered |
+    | bin auto[3355443200:3422552063]       |        2 |        1 | Covered |
+    | bin auto[3422552064:3489660927]       |        5 |        1 | Covered |
+    | bin auto[3489660928:3556769791]       |        2 |        1 | Covered |
+    | bin auto[3556769792:3623878655]       |        5 |        1 | Covered |
+    | bin auto[3623878656:3690987519]       |        3 |        1 | Covered |
+    | bin auto[3690987520:3758096383]       |        4 |        1 | Covered |
+    | bin auto[3758096384:3825205247]       |        4 |        1 | Covered |
+    | bin auto[3825205248:3892314111]       |        6 |        1 | Covered |
+    | bin auto[3892314112:3959422975]       |        5 |        1 | Covered |
+    | bin auto[3959422976:4026531839]       |        5 |        1 | Covered |
+    | bin auto[4026531840:4093640703]       |        2 |        1 | Covered |
+    | bin auto[4093640704:4160749567]       |        6 |        1 | Covered |
+    | bin auto[4160749568:4227858431]       |        4 |        1 | Covered |
+    | bin auto[4227858432:4294967295]       |        2 |        1 | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | COVERPOINT cov::COV2                  | 100.000% | 100.000% | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | bin address[0]                        |       18 |        1 | Covered |
+    | bin address[1]                        |       18 |        1 | Covered |
+    | bin address[2]                        |       15 |        1 | Covered |
+    | bin address[3]                        |       20 |        1 | Covered |
+    | bin address[4]                        |       19 |        1 | Covered |
+    | bin address[5]                        |       20 |        1 | Covered |
+    | bin address[6]                        |       17 |        1 | Covered |
+    | bin address[7]                        |       18 |        1 | Covered |
+    | bin address[8]                        |       16 |        1 | Covered |
+    | bin address[9]                        |       19 |        1 | Covered |
+    | bin address[10]                       |       20 |        1 | Covered |
+    | bin address[11]                       |       22 |        1 | Covered |
+    | bin address[12]                       |       20 |        1 | Covered |
+    | bin address[13]                       |       17 |        1 | Covered |
+    | bin address[14]                       |       19 |        1 | Covered |
+    | bin address[15]                       |       16 |        1 | Covered |
+    | bin address[16]                       |       17 |        1 | Covered |
+    | bin address[17]                       |       21 |        1 | Covered |
+    | bin address[18]                       |       20 |        1 | Covered |
+    | bin address[19]                       |       18 |        1 | Covered |
+    | bin address[20]                       |       19 |        1 | Covered |
+    | bin address[21]                       |       15 |        1 | Covered |
+    | bin address[22]                       |       21 |        1 | Covered |
+    | bin address[23]                       |       20 |        1 | Covered |
+    | bin address[24]                       |       22 |        1 | Covered |
+    | bin address[25]                       |       20 |        1 | Covered |
+    | bin address[26]                       |       16 |        1 | Covered |
+    | bin address[27]                       |       16 |        1 | Covered |
+    | bin address[28]                       |       19 |        1 | Covered |
+    | bin address[29]                       |       20 |        1 | Covered |
+    | bin address[30]                       |       21 |        1 | Covered |
+    | bin address[31]                       |       21 |        1 | Covered |
+    =========================================================================
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++       DESIGN UNITS      ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CUMULATIVE SUMMARY
+=============================================
+|    Coverage Type    | Weight | Hits/Total |
+=============================================
+| Covergroup Coverage |      1 |   100.000% |
+|---------------------|--------|------------|
+| Types               |        |      1 / 1 |
+=============================================
+CUMULATIVE DESIGN-BASED COVERAGE: 100.000%
+COVERED DESIGN UNITS: 1 / 1
+FILES: 1
+
+
+CLASS - work.pkg/\pkg subscriber \
+
+
+    SUMMARY
+    =============================================
+    |    Coverage Type    | Weight | Hits/Total |
+    =============================================
+    | Covergroup Coverage |      1 |   100.000% |
+    |---------------------|--------|------------|
+    | Types               |        |      1 / 1 |
+    =============================================
+    WEIGHTED AVERAGE: 100.000%
+
+
+    COVERGROUP COVERAGE
+    =========================================================================
+    |              Covergroup               |   Hits   |  Goal /  | Status  |
+    |                                       |          | At Least |         |
+    =========================================================================
+    | TYPE /\package pkg\/subscriber/cg_cov | 100.000% | 100.000% | Covered |
+    =========================================================================
+    | INSTANCE cov                          | 100.000% | 100.000% | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | COVERPOINT cov::COV1                  | 100.000% | 100.000% | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | bin auto[0:67108863]                  |        1 |        1 | Covered |
+    | bin auto[67108864:134217727]          |        6 |        1 | Covered |
+    | bin auto[134217728:201326591]         |        4 |        1 | Covered |
+    | bin auto[201326592:268435455]         |        3 |        1 | Covered |
+    | bin auto[268435456:335544319]         |        4 |        1 | Covered |
+    | bin auto[335544320:402653183]         |        5 |        1 | Covered |
+    | bin auto[402653184:469762047]         |        2 |        1 | Covered |
+    | bin auto[469762048:536870911]         |        7 |        1 | Covered |
+    | bin auto[536870912:603979775]         |        5 |        1 | Covered |
+    | bin auto[603979776:671088639]         |        5 |        1 | Covered |
+    | bin auto[671088640:738197503]         |        4 |        1 | Covered |
+    | bin auto[738197504:805306367]         |        4 |        1 | Covered |
+    | bin auto[805306368:872415231]         |        4 |        1 | Covered |
+    | bin auto[872415232:939524095]         |        4 |        1 | Covered |
+    | bin auto[939524096:1006632959]        |       10 |        1 | Covered |
+    | bin auto[1006632960:1073741823]       |        5 |        1 | Covered |
+    | bin auto[1073741824:1140850687]       |        1 |        1 | Covered |
+    | bin auto[1140850688:1207959551]       |        4 |        1 | Covered |
+    | bin auto[1207959552:1275068415]       |        8 |        1 | Covered |
+    | bin auto[1275068416:1342177279]       |        3 |        1 | Covered |
+    | bin auto[1342177280:1409286143]       |        4 |        1 | Covered |
+    | bin auto[1409286144:1476395007]       |        9 |        1 | Covered |
+    | bin auto[1476395008:1543503871]       |        8 |        1 | Covered |
+    | bin auto[1543503872:1610612735]       |        6 |        1 | Covered |
+    | bin auto[1610612736:1677721599]       |        6 |        1 | Covered |
+    | bin auto[1677721600:1744830463]       |        6 |        1 | Covered |
+    | bin auto[1744830464:1811939327]       |        6 |        1 | Covered |
+    | bin auto[1811939328:1879048191]       |        5 |        1 | Covered |
+    | bin auto[1879048192:1946157055]       |        4 |        1 | Covered |
+    | bin auto[1946157056:2013265919]       |        5 |        1 | Covered |
+    | bin auto[2013265920:2080374783]       |        4 |        1 | Covered |
+    | bin auto[2080374784:2147483647]       |        2 |        1 | Covered |
+    | bin auto[2147483648:2214592511]       |      304 |        1 | Covered |
+    | bin auto[2214592512:2281701375]       |        4 |        1 | Covered |
+    | bin auto[2281701376:2348810239]       |        4 |        1 | Covered |
+    | bin auto[2348810240:2415919103]       |        6 |        1 | Covered |
+    | bin auto[2415919104:2483027967]       |        5 |        1 | Covered |
+    | bin auto[2483027968:2550136831]       |        6 |        1 | Covered |
+    | bin auto[2550136832:2617245695]       |        5 |        1 | Covered |
+    | bin auto[2617245696:2684354559]       |        5 |        1 | Covered |
+    | bin auto[2684354560:2751463423]       |        3 |        1 | Covered |
+    | bin auto[2751463424:2818572287]       |        6 |        1 | Covered |
+    | bin auto[2818572288:2885681151]       |        6 |        1 | Covered |
+    | bin auto[2885681152:2952790015]       |        6 |        1 | Covered |
+    | bin auto[2952790016:3019898879]       |        5 |        1 | Covered |
+    | bin auto[3019898880:3087007743]       |        5 |        1 | Covered |
+    | bin auto[3087007744:3154116607]       |        6 |        1 | Covered |
+    | bin auto[3154116608:3221225471]       |        4 |        1 | Covered |
+    | bin auto[3221225472:3288334335]       |        6 |        1 | Covered |
+    | bin auto[3288334336:3355443199]       |        5 |        1 | Covered |
+    | bin auto[3355443200:3422552063]       |        2 |        1 | Covered |
+    | bin auto[3422552064:3489660927]       |        5 |        1 | Covered |
+    | bin auto[3489660928:3556769791]       |        2 |        1 | Covered |
+    | bin auto[3556769792:3623878655]       |        5 |        1 | Covered |
+    | bin auto[3623878656:3690987519]       |        3 |        1 | Covered |
+    | bin auto[3690987520:3758096383]       |        4 |        1 | Covered |
+    | bin auto[3758096384:3825205247]       |        4 |        1 | Covered |
+    | bin auto[3825205248:3892314111]       |        6 |        1 | Covered |
+    | bin auto[3892314112:3959422975]       |        5 |        1 | Covered |
+    | bin auto[3959422976:4026531839]       |        5 |        1 | Covered |
+    | bin auto[4026531840:4093640703]       |        2 |        1 | Covered |
+    | bin auto[4093640704:4160749567]       |        6 |        1 | Covered |
+    | bin auto[4160749568:4227858431]       |        4 |        1 | Covered |
+    | bin auto[4227858432:4294967295]       |        2 |        1 | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | COVERPOINT cov::COV2                  | 100.000% | 100.000% | Covered |
+    |---------------------------------------|----------|----------|---------|
+    | bin address[0]                        |       18 |        1 | Covered |
+    | bin address[1]                        |       18 |        1 | Covered |
+    | bin address[2]                        |       15 |        1 | Covered |
+    | bin address[3]                        |       20 |        1 | Covered |
+    | bin address[4]                        |       19 |        1 | Covered |
+    | bin address[5]                        |       20 |        1 | Covered |
+    | bin address[6]                        |       17 |        1 | Covered |
+    | bin address[7]                        |       18 |        1 | Covered |
+    | bin address[8]                        |       16 |        1 | Covered |
+    | bin address[9]                        |       19 |        1 | Covered |
+    | bin address[10]                       |       20 |        1 | Covered |
+    | bin address[11]                       |       22 |        1 | Covered |
+    | bin address[12]                       |       20 |        1 | Covered |
+    | bin address[13]                       |       17 |        1 | Covered |
+    | bin address[14]                       |       19 |        1 | Covered |
+    | bin address[15]                       |       16 |        1 | Covered |
+    | bin address[16]                       |       17 |        1 | Covered |
+    | bin address[17]                       |       21 |        1 | Covered |
+    | bin address[18]                       |       20 |        1 | Covered |
+    | bin address[19]                       |       18 |        1 | Covered |
+    | bin address[20]                       |       19 |        1 | Covered |
+    | bin address[21]                       |       15 |        1 | Covered |
+    | bin address[22]                       |       21 |        1 | Covered |
+    | bin address[23]                       |       20 |        1 | Covered |
+    | bin address[24]                       |       22 |        1 | Covered |
+    | bin address[25]                       |       20 |        1 | Covered |
+    | bin address[26]                       |       16 |        1 | Covered |
+    | bin address[27]                       |       16 |        1 | Covered |
+    | bin address[28]                       |       19 |        1 | Covered |
+    | bin address[29]                       |       20 |        1 | Covered |
+    | bin address[30]                       |       21 |        1 | Covered |
+    | bin address[31]                       |       21 |        1 | Covered |
+    =========================================================================
+
+
